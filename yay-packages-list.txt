@@ -1,0 +1,17 @@
+autojump
+betterlockscreen
+cava
+escrotum-git
+faba-icon-theme
+i3lock-color
+nerd-fonts-fira-code
+nerd-fonts-hack
+nordic-darker-theme
+nordzy-icon-theme-git
+raw-thumbnailer
+slack-desktop
+timeshift
+timeshift-autosnap
+ttf-meslo-nerd-font-powerlevel10k
+yay
+zscroll-git

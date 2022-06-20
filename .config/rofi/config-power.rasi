@@ -1,0 +1,66 @@
+configuration {
+	font:                           "FuraMono Nerd Font Mono 12";
+  show-icons:                     false;
+  drun-display-format:            "{name}";
+  disable-history:                false;
+	sidebar-mode: 					        false;
+}
+
+* {
+    window-bg-color:              rgba(59, 66, 82, 0.8);
+    selected-bg-color:            rgba(129, 161, 193, 0.5);
+    unselected-bg-color:          rgba(76, 86, 106, 0.3);
+    selected-text-color:          rgba(255, 255, 255, 1);
+    unselected-text-color:        rgba(255, 255, 255, 0.5);
+}
+
+window {
+  transparency:                   "real";
+  background-color:               @window-bg-color;
+  text-color:                     @foreground;
+  border-radius:                  0;
+	width:							            100%;
+	height:							            100%;
+}
+
+
+listview {
+  background-color:               transparent;
+  margin:                         0% 0% 0% 0%;
+  spacing:                        3%;
+  cycle:                          true;
+  dynamic:                        true;
+  layout:                         horizontal;
+}
+
+mainbox {
+  background-color:               @window-bg-color;
+  children:                       [ listview ];
+  spacing:                        5%;
+  padding:                        32.50% 0% 0% 16.25%;
+}
+
+element {
+  background-color:               @unselected-bg-color;
+  text-color:                     @unselected-text-color;
+  orientation:                    horizontal;
+  border-radius:                  12px;
+}
+
+element-text {
+  background-color: 				      #00000000;
+  text-color:       				      inherit;
+	font:							              "FuraMono Nerd Font Mono 64";
+  expand:                         true;
+  horizontal-align:               0.5;
+  vertical-align:                 0.5;
+  margin:                         6.5% 4% 6.5% 4%;
+}
+
+element selected {
+  background-color:               @selected-bg-color;
+  text-color:                     @selected-text-color;
+  border:                  		    0.2%;
+  border-color:                  	@selected-text-color;
+  border-radius:                  12px;
+}

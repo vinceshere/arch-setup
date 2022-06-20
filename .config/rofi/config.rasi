@@ -1,0 +1,17 @@
+configuration {
+	modi: "window,run,ssh,drun";
+  combi-modes: [window,drun];
+	font: "FuraMono Nerd Font Mono 12";
+	show-icons: true;
+	terminal: "kitty";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "nord"

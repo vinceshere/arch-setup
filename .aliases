@@ -1,0 +1,28 @@
+# ------------------------------------
+# Docker alias and function
+# ------------------------------------
+
+alias d='docker'
+alias dcb='docker-compose build'
+alias dcbnc='docker-compose build --no-cache'
+alias dcdn='docker-compose down'
+alias dce='docker-compose exec'
+alias dckill='docker-compose kill'
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
+alias dco=docker-compose
+alias dcps='docker-compose ps'
+alias dcpull='docker-compose pull'
+alias dcr='docker-compose run --rm'
+alias dcrestart='docker-compose restart'
+alias dcrm='docker-compose rm'
+alias dcrunb='docker-compose run --rm web bash'
+alias dcstart='docker-compose start'
+alias dcstop='docker-compose stop'
+alias dcup='docker-compose up'
+alias docker-clean-images='docker images -q --filter="dangling=true" | xargs -r docker rmi'
+alias docker-clean-volumes='docker volume ls -qf dangling=true | xargs -r docker volume rm'
+alias docker-clean='docker ps -qa --filter status=exited --filter status=created | xargs -r docker rm'
+
+# Show all alias related docker/docker-compose
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
